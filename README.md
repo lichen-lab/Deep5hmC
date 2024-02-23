@@ -19,4 +19,9 @@ conda env create -f environment.yml
 ```
 ## Usage
 1. Download data and pretrained models from [Dropbox](https://www.dropbox.com/scl/fo/m1p1i6d4goigafokadfxb/h?rlkey=apjt44fxmqcwj56wienw76w8w&dl=0).
-2. We created a demo ([main.ipynb](https://github.com/XinBiostats/Deep5hmC/blob/main/main.ipynb)) to demonstrate how to use __Deep5hmC__. The results will be displayed inline or saved by users.
+2. Run Deep5hmC-binary model in the terminal.
+```bash
+python Deep5hmC_binary.py
+```
+3. Run Deep5hmC-binary model in Jupyter Notebook.<br/>
+We created a demo ([main.ipynb](https://github.com/XinBiostats/Deep5hmC/blob/main/main.ipynb)) to demonstrate how to use __Deep5hmC__. The results will be displayed inline or saved by users.
