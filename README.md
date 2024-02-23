@@ -18,5 +18,5 @@ git clone https://github.com/XinBiostats/Deep5hmC
 conda env create -f environment.yml
 ```
 ## Usage
-1. Download data from [Dropbox](https://www.dropbox.com/scl/fi/5lc4sjudy1eby0ns80imq/3d_lipid.csv?rlkey=3e8yzh7gva8kzliwnc3xa2mt3&dl=0) and put downloaded data into data folder.
+1. Download data and pretrained models from [Dropbox](https://www.dropbox.com/scl/fo/m1p1i6d4goigafokadfxb/h?rlkey=apjt44fxmqcwj56wienw76w8w&dl=0).
 2. We created a demo ([main.ipynb](https://github.com/XinBiostats/Deep5hmC/blob/main/main.ipynb)) to demonstrate how to use __Deep5hmC__. The results will be displayed inline or saved by users.
