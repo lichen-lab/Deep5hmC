@@ -9,11 +9,11 @@ We develop __Deep5hmC__, which is a multimodal deep learning framework that inte
 
 ## Installation
 
-1. Download Deep5hmC:
+1. Download __Deep5hmC__:
 ```bash
 git clone https://github.com/XinBiostats/Deep5hmC
 ```
-2. Requirements: Deep5hmC is implemented in Python. To install requirements
+2. Requirements: __Deep5hmC__ is implemented in Python. To install requirements
 ```bash
 conda env create -f environment.yml
 ```
