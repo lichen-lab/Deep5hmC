@@ -1,15 +1,15 @@
 # Deep5hmC: Predicting genome-wide 5-Hydroxymethylcytosine landscape via multimodal deep learning model
 
 We introduce __MetaVision3D__, a novel pipeline driven by computer vision techniques for the transformation of serial 2D MALDI mass spectrometry imaging sections into a high-resolution 3D spatial metabolome. Our framework employs advanced algorithms for image registration, normalization, and interpolation to enable the integration of serial 2D tissue sections, thereby generating a comprehensive 3D model of unique diverse metabolites across host tissues at mesoscale.
-![Deep5hmC](https://github.com/XinBiostats/MetaVision3D/assets/136360597/4e87e94f-c738-47b1-900a-fa0e605ac808)
+![Deep5hmC.pdf](https://github.com/XinBiostats/Deep5hmC/files/14386695/figure2.pdf)
 
 ## Installation
 
-1. Download MetaVision3D:
+1. Download Deep5hmC:
 ```bash
-git clone https://github.com/XinBiostats/MetaVision3D
+git clone https://github.com/XinBiostats/Deep5hmC
 ```
-2. Requirements: MetaVision3D is implemented in Python. To install requirements
+2. Requirements: Deep5hmC is implemented in Python. To install requirements
 ```bash
 conda env create -f environment.yml
 ```
