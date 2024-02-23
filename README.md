@@ -24,4 +24,4 @@ conda env create -f environment.yml
 python Deep5hmC_binary.py
 ```
 3. Run Deep5hmC-binary model in Jupyter Notebook.<br/>
-We created a demo ([main.ipynb](https://github.com/XinBiostats/Deep5hmC/blob/main/main.ipynb)) to demonstrate how to use __Deep5hmC__. The results will be displayed inline or saved by users.
+We created a demo ([main.ipynb](https://github.com/XinBiostats/Deep5hmC/blob/main/source/main.ipynb)) to demonstrate how to use __Deep5hmC__. The results will be displayed inline or saved by users.
