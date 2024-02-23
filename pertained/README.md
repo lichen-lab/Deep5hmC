@@ -1,3 +1,6 @@
+Please download pretrained models (./Deeph5mC/pretrained) from Dropbox:
+
+
 ### Three Pretrained Models:
 
 1. Deep5hmC_binary.pth
