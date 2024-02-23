@@ -1,6 +1,6 @@
 # Deep5hmC: Predicting genome-wide 5-Hydroxymethylcytosine landscape via multimodal deep learning model
 
-we develop __Deep5hmC__, which is a multimodal deep learning framework that integrates both the DNA sequence and the histone modification, to predict genome-wide 5hmC modification.
+We develop __Deep5hmC__, which is a multimodal deep learning framework that integrates both the DNA sequence and the histone modification, to predict genome-wide 5hmC modification. Moreover, __Deep5hmC__ demonstrates its practical usage by accurately predicting gene expression and differentially hydroxymethylated regions in a case-control Alzheimer’s disease study.
 ![Deep5hmC.pdf](https://github.com/XinBiostats/Deep5hmC/files/14386695/figure2.pdf)
 
 ## Installation
