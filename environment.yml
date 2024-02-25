@@ -1,0 +1,20 @@
+name: Deep5hmC
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - bioconda
+  - defaults
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/free
+dependencies:
+  - python=3.10
+  - torch
+  - numpy
+  - pandas
+  - h5py
+  - scikit-learn
+  - biopython
+  - matplotlib
+  - time
+  
