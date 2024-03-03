@@ -4,7 +4,7 @@ We develop __Deep5hmC__, which is a multimodal deep learning framework that inte
 
 <br/>
 
-![Deep5hmC.pdf](https://github.com/XinBiostats/Deep5hmC/files/14386695/figure2.pdf)
+![Deep5hmC.pdf](figure2.png)
 
 
 ## Installation
