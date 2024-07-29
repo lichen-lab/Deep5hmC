@@ -22,8 +22,11 @@ conda env create -f environment.yml
 2. Run Deep5hmC models using sample data in the terminal.
 ```bash
 python ./source/Deep5hmC_binary.py
+
 python ./source/Deep5hmC_cont.py
+
 python ./source/Deep5hmC_dif.py
+
 python ./source/Deep5hmC_gene.py
 ```
 3. Run Deep5hmC-binary model in Jupyter Notebook.<br/>
