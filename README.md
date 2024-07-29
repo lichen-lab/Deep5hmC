@@ -25,7 +25,7 @@ python ./source/Deep5hmC_binary.py
 
 python ./source/Deep5hmC_cont.py
 
-python ./source/Deep5hmC_dif.py
+python ./source/Deep5hmC_diff.py
 
 python ./source/Deep5hmC_gene.py
 ```
