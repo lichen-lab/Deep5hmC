@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 from sklearn.metrics import roc_curve,auc,f1_score,recall_score,precision_score,accuracy_score,precision_recall_curve, average_precision_score,mean_squared_error
-from scipy.stats import wilcoxon,pearsonr
+from scipy.stats import wilcoxon,pearsonr,spearmanr
 import matplotlib.pyplot as plt
 import pandas as pd
 import os
@@ -172,7 +172,7 @@ class Evaluator():
         f1_test = f1_score(y_test_classes, y_test, average='binary')
         recall_test = recall_score(y_test_classes, y_test, average='binary')
         precision_test = precision_score(y_test_classes, y_test, average='binary')
-        R_test = pearsonr(y_test, y_test_prob)[0]
+        R_test = spearmanr(y_test, y_test_prob)[0]
         precision, recall, _ = precision_recall_curve(y_test, y_test_prob)
         auprc = auc(recall,precision)
 
@@ -208,7 +208,7 @@ class Evaluator():
         y_preds = pred_res['y_pred']
         y_test = pred_res['y']
 
-        R_test = pearsonr(y_test, y_preds)[0]
+        R_test = spearmanr(y_test, y_preds)[0]
         MSE = mean_squared_error(y_test,y_preds)
         self.R_test=round(R_test,3)
         self.MSE=round(MSE,3)
@@ -226,7 +226,7 @@ class Evaluator():
         output = []
         for iobserved in range(len(observed)):
             pred_res = pd.read_csv(f'../pred/pred_gene_{observed[iobserved]}.csv')
-            R_test = pearsonr(pred_res.y_pred,pred_res.y)[0]
+            R_test = spearmanr(pred_res.y_pred,pred_res.y)[0]
             MSE = mean_squared_error(pred_res.y_pred,pred_res.y)
             output.extend([MSE,R_test])  
         
@@ -249,7 +249,7 @@ class Evaluator():
         f1_test = f1_score(y_test_classes, y_test, average='binary')
         recall_test = recall_score(y_test_classes, y_test, average='binary')
         precision_test = precision_score(y_test_classes, y_test, average='binary')
-        R_test = pearsonr(y_test, y_test_prob)[0]
+        R_test = spearmanr(y_test, y_test_prob)[0]
         precision, recall, _ = precision_recall_curve(y_test, y_test_prob)
         auprc = auc(recall,precision)
 
