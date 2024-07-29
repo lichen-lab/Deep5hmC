@@ -70,7 +70,7 @@ class MyDataset_binary(MyDataLoader):
                 print('reads loaded')
                 
                 y1_pos, y1_neg = self.label_binary(x_pos_read,x_neg_read)
-                y2_pos, y2_neg = self.label_cont('../data/binary_cont/5hmC_peak')
+                y2_pos, y2_neg = self.label_cont('../data/binary_cont/5hmC_counts')
                 print('y loaded')
                     
                 x_seq, x_read, x_peak, y1, y2 = self.combine_pos_neg(x_pos_seq, x_pos_peak, x_pos_read, x_neg_seq, x_neg_peak, x_neg_read, y1_pos, y1_neg, y2_pos, y2_neg)
@@ -236,7 +236,7 @@ class MyDataset_cont(MyDataLoader):
                 print('reads loaded')
 
                 y1_pos, y1_neg = self.label_binary(x_pos_read,x_neg_read)
-                y2_pos, y2_neg = self.label_cont('../data/binary_cont/5hmC_peak')
+                y2_pos, y2_neg = self.label_cont('../data/binary_cont/5hmC_counts')
                 print('y loaded')
 
                 x_seq, x_read, x_peak, y1, y2 = self.combine_pos_neg(x_pos_seq, x_pos_peak, x_pos_read, x_neg_seq, x_neg_peak, x_neg_read, y1_pos, y1_neg, y2_pos, y2_neg)
