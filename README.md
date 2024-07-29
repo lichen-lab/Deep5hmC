@@ -37,5 +37,4 @@ python ./source/Deep5hmC_gene.py
 ```
 
 ### In Jupyter
-4. Run Deep5hmC models in Jupyter Notebook.<br/>
 We created a demo ([main.ipynb](https://github.com/XinBiostats/Deep5hmC/blob/main/source/main.ipynb)) to demonstrate how to use __Deep5hmC__. The results will be displayed inline or saved by users.
