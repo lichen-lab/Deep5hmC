@@ -4,7 +4,7 @@ We develop __Deep5hmC__, which is a multimodal deep learning framework that inte
 
 <br/>
 
-![Deep5hmC.pdf](figure2.png)
+![Deep5hmC.pdf](figure1.png)
 
 
 ## Installation
