@@ -10,6 +10,6 @@ data_gene = MyDataset_gene(64*8,['H3K4me1','H3K4me3'])
 model_gene = Deep5hmC_gene(input_read_size=data_gene.read_size)
 
 # evaluate Deep5hmC_gene (Note: Using pretrained Deep5hmC_cont)
-evaluator = Evaluator(model_gene, '../parameters/Deep5hmC_cont.pth')
+evaluator = Evaluator(model_gene, '../weights/Deep5hmC_cont.pth')
 
 evaluator.eval_model_gene(data_gene,verbose=1)
