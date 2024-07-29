@@ -19,7 +19,11 @@ conda env create -f environment.yml
 ```
 ## Usage
 1. Download data and pretrained models from [Dropbox](https://www.dropbox.com/scl/fo/m1p1i6d4goigafokadfxb/h?rlkey=apjt44fxmqcwj56wienw76w8w&dl=1) to './Deep5hmC/data' and './Deep5hmC/pretrained'.
-2. Run Deep5hmC models using sample data in the terminal.
+2. Activate your conda environment 'Deep5hmC' in the terminal.
+```bash
+conda activate Deep5hmC
+'''
+4. Run Deep5hmC models using sample data in the terminal.
 ```bash
 python ./source/Deep5hmC_binary.py
 
