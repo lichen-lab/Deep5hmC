@@ -17,6 +17,6 @@ trainer.fit_cont(model_cont,data_cont)
 
 
 # evaluate Deep5hmC_binary
-evaluator = Evaluator(model_cont, '../parameters/Deep5hmC_cont.pth')
+evaluator = Evaluator(model_cont, '../weights/Deep5hmC_cont.pth')
 
 evaluator.eval_model_cont(data_cont,verbose=1)
