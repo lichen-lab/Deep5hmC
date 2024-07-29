@@ -25,8 +25,8 @@ class Trainer():
             "val_acc": []
         }
         
-        if not os.path.exists('../parameters/'):
-            os.makedirs('../parameters/')
+        if not os.path.exists('../weights/'):
+            os.makedirs('../weights/')
         
     def prepare_data(self, data):
         self.train_dataloader = data.train_dataloader()
@@ -113,8 +113,8 @@ class Trainer():
             if self.avgValLoss < best_loss:
                 best_loss = self.avgValLoss
                 best_epoch = e
-                self.best_model = f"../parameters/{self.model.model_name}.pth"
-                torch.save(self.model.state_dict(), f"../parameters/{self.model.model_name}.pth")
+                self.best_model = f"../weights/{self.model.model_name}.pth"
+                torch.save(self.model.state_dict(), f"../weights/{self.model.model_name}.pth")
             elif e - best_epoch > self.earlystop_thresh:
                 print("Early stopped training at epoch %d" % e)
                 break
@@ -178,8 +178,8 @@ class Trainer():
             if self.avgValLoss < best_loss:
                 best_loss = self.avgValLoss
                 best_epoch = e
-                self.best_model = f"../parameters/{self.model.model_name}.pth"
-                torch.save(self.model.state_dict(), f"../parameters/{self.model.model_name}.pth")
+                self.best_model = f"../weights/{self.model.model_name}.pth"
+                torch.save(self.model.state_dict(), f"../weights/{self.model.model_name}.pth")
             elif e - best_epoch > self.earlystop_thresh:
                 print("Early stopped training at epoch %d" % e)
                 break
@@ -246,8 +246,8 @@ class Trainer():
             if self.avgValLoss < best_loss:
                 best_loss = self.avgValLoss
                 best_epoch = e
-                self.best_model = f"../parameters/{self.model.model_name}.pth"
-                torch.save(self.model.state_dict(), f"../parameters/{self.model.model_name}.pth")
+                self.best_model = f"../weights/{self.model.model_name}.pth"
+                torch.save(self.model.state_dict(), f"../weights/{self.model.model_name}.pth")
             elif e - best_epoch > self.earlystop_thresh:
                 print("Early stopped training at epoch %d" % e)
                 break
