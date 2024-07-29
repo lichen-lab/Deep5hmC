@@ -15,6 +15,6 @@ trainer = Trainer(num_epochs=200, lr=1e-3, earlystop_thresh=20)
 trainer.fit_diff(model_diff,data_diff)
 
 # Evaluate Deep5hmC_diff
-evaluator = Evaluator(model_diff, '../parameters/Deep5hmC_diff.pth')
+evaluator = Evaluator(model_diff, '../weights/Deep5hmC_diff.pth')
 
 evaluator.eval_model_diff(data_diff,verbose=1)
