@@ -19,6 +19,8 @@ conda env create -f environment.yml
 ```
 ## Usage
 1. Download data and pretrained models from [Dropbox](https://www.dropbox.com/scl/fo/m1p1i6d4goigafokadfxb/h?rlkey=apjt44fxmqcwj56wienw76w8w&dl=1) to './Deep5hmC/data' and './Deep5hmC/weights'.
+
+### In terminal
 2. Activate your conda environment 'Deep5hmC' in the terminal.
 ```bash
 conda activate Deep5hmC
@@ -33,5 +35,7 @@ python ./source/Deep5hmC_diff.py
 
 python ./source/Deep5hmC_gene.py
 ```
+
+### In Jupyter
 4. Run Deep5hmC models in Jupyter Notebook.<br/>
 We created a demo ([main.ipynb](https://github.com/XinBiostats/Deep5hmC/blob/main/source/main.ipynb)) to demonstrate how to use __Deep5hmC__. The results will be displayed inline or saved by users.
