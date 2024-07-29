@@ -23,7 +23,7 @@ conda env create -f environment.yml
 ```bash
 conda activate Deep5hmC
 ```
-4. Run Deep5hmC models using sample data in the terminal.
+3. Run Deep5hmC models using sample data in the terminal.
 ```bash
 python ./source/Deep5hmC_binary.py
 
@@ -33,5 +33,5 @@ python ./source/Deep5hmC_diff.py
 
 python ./source/Deep5hmC_gene.py
 ```
-3. Run Deep5hmC-binary model in Jupyter Notebook.<br/>
+4. Run Deep5hmC models in Jupyter Notebook.<br/>
 We created a demo ([main.ipynb](https://github.com/XinBiostats/Deep5hmC/blob/main/source/main.ipynb)) to demonstrate how to use __Deep5hmC__. The results will be displayed inline or saved by users.
