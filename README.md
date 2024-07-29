@@ -22,7 +22,7 @@ conda env create -f environment.yml
 2. Activate your conda environment 'Deep5hmC' in the terminal.
 ```bash
 conda activate Deep5hmC
-'''
+```
 4. Run Deep5hmC models using sample data in the terminal.
 ```bash
 python ./source/Deep5hmC_binary.py
