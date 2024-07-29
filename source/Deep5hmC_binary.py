@@ -15,6 +15,6 @@ trainer = Trainer(num_epochs=5, lr=1e-3, earlystop_thresh=20)
 trainer.fit_binary(model_binary,data_binary)
 
 # evaluate Deep5hmC_binary
-evaluator = Evaluator(model_binary, '../parameters/Deep5hmC_binary.pth')
+evaluator = Evaluator(model_binary, '../weights/Deep5hmC_binary.pth')
 
 evaluator.eval_model_binary(data_binary,verbose=1)
