@@ -242,7 +242,7 @@ class MFBLayer(nn.Module):
 
 #########################################################################################
 class Deep5hmC_binary(nn.Module):
-    def __init__(self,input_read_size,input_dim1=256,input_dim2=512,mfb_out_dim=512,mfb_factor_num=10):
+    def __init__(self,input_read_size,input_dim1=256,input_dim2=256,mfb_out_dim=512,mfb_factor_num=10):
         super(Deep5hmC_binary, self).__init__()
         self.model_name = 'Deep5hmC_binary'
         
@@ -254,7 +254,7 @@ class Deep5hmC_binary(nn.Module):
         self.Reads_CNN2 = Reads_CNN1(input_read_size=input_read_size[1])
         
         #combine module
-        self.compact_bilinear_pooling = MFBLayer(input_dim1,input_dim2,mfb_out_dim,mfb_factor_num)
+        self.compact_bilinear_pooling = MFBLayer(input_dim1,input_dim2*2,mfb_out_dim,mfb_factor_num)
         
         #predict module
         self.combined_fc1 = nn.Linear(mfb_out_dim, 128)
