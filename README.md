@@ -18,7 +18,7 @@ git clone https://github.com/XinBiostats/Deep5hmC
 conda env create -f environment.yml
 ```
 ## Usage
-- Download data and pretrained models from [Dropbox](https://www.dropbox.com/scl/fo/m1p1i6d4goigafokadfxb/h?rlkey=apjt44fxmqcwj56wienw76w8w&dl=1) to './Deep5hmC/data' and './Deep5hmC/weights'.
+- Download preprocessed data and pretrained models from [Dropbox](https://www.dropbox.com/scl/fo/m1p1i6d4goigafokadfxb/h?rlkey=apjt44fxmqcwj56wienw76w8w&dl=1) to './Deep5hmC/data' and './Deep5hmC/weights'.
 
 ### In terminal
 - Activate your conda environment 'Deep5hmC' in the terminal.
