@@ -18,8 +18,8 @@ git clone https://github.com/XinBiostats/Deep5hmC
 conda env create -f environment.yml
 ```
 ## Usage
-- Download preprocessed "Forebrain Orgainoid" data at EB stage from [Dropbox](https://www.dropbox.com/scl/fo/zbht290yp67yfd1bcvofy/AGG8rFnKJxGTbmrv6uR_RSA?rlkey=3va94r26om8muivxho72wpzpp&dl=0) to './Deep5hmC/data'.
-
+1. Download preprocessed "Forebrain Orgainoid" data at EB stage from [Dropbox](https://www.dropbox.com/scl/fo/zbht290yp67yfd1bcvofy/AGG8rFnKJxGTbmrv6uR_RSA?rlkey=3va94r26om8muivxho72wpzpp&dl=0) to './Deep5hmC/data'.
+2. setup "./source/config.json" file.
 ### In terminal
 - Activate your conda environment 'Deep5hmC' in the terminal.
 ```bash
