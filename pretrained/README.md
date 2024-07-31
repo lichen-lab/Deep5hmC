@@ -1,6 +1,5 @@
-Please download pretrained models from Dropbox (https://www.dropbox.com/scl/fo/u554hot7s4zu11u9umjhx/h?rlkey=77nbape0s9x4e7vkrwjl2zq6i&dl=1) to this directory (./Deeph5mC/weights).
+Please download pretrained models from Dropbox (https://www.dropbox.com/scl/fo/b8hyeamnojacp04o6hgs1/ACfiArxwvTk-guFqdpshKDA?rlkey=55mtuusluf7o4qpvfrm5p3q5d&dl=0) to "./Deeph5mC/weights".
 ### Three Pretrained Models:
 
 1. Deep5hmC_binary.pth
 2. Deep5hmC_cont.pth (Deep5hmC_gene)
-3. Deep5hmC_diff.pth
