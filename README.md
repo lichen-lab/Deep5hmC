@@ -36,6 +36,16 @@ conda env create -f environment.yml
   "earlystop_thresh": 10            // Number of epochs to wait for improvement before early stopping is triggered
 }
 ```
+3. Activate your conda environment 'Deep5hmC' in the terminal.
+```bash
+conda activate Deep5hmC
+```
+4. Create .h5 data.
+```bash
+cd ./source
+
+python create_h5.py ./config.json
+```
 ### In terminal
 - Activate your conda environment 'Deep5hmC' in the terminal.
 ```bash
