@@ -36,31 +36,21 @@ conda env create -f environment.yml
   "earlystop_thresh": 10            // Number of epochs to wait for improvement before early stopping is triggered
 }
 ```
+### In terminal
 3. Activate your conda environment 'Deep5hmC' in the terminal.
 ```bash
 conda activate Deep5hmC
 ```
 4. Create .h5 data.
 ```bash
-cd ./source
-
-python create_h5.py ./config.json
+python ./source/create_h5.py ./source/config.json
 ```
-### In terminal
-- Activate your conda environment 'Deep5hmC' in the terminal.
+5. Run Deep5hmC-binary or Deep5hmC-cont model.
 ```bash
-conda activate Deep5hmC
-```
-- Run Deep5hmC models using sample data in the terminal.
-```bash
-python ./source/Deep5hmC_binary.py
+python ./source/Deep5hmC_binary.py ./source/config.json
 
-python ./source/Deep5hmC_cont.py
-
-python ./source/Deep5hmC_diff.py
-
-python ./source/Deep5hmC_gene.py
+python ./source/Deep5hmC_cont.py ./source/config.json
 ```
 
 ### In Jupyter
-We created a demo ([main.ipynb](https://github.com/XinBiostats/Deep5hmC/blob/main/source/main.ipynb)) to demonstrate how to use __Deep5hmC__. The results will be displayed inline or saved by users.
+We created a demo ([demo.ipynb](https://github.com/XinBiostats/Deep5hmC/blob/main/source/demo.ipynb)) to demonstrate how to use __Deep5hmC__. The results will be displayed inline or saved by users.
