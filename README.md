@@ -19,7 +19,23 @@ conda env create -f environment.yml
 ```
 ## Usage
 1. Download preprocessed "Forebrain Orgainoid" data at EB stage from [Dropbox](https://www.dropbox.com/scl/fo/zbht290yp67yfd1bcvofy/AGG8rFnKJxGTbmrv6uR_RSA?rlkey=3va94r26om8muivxho72wpzpp&dl=0) to './Deep5hmC/data'.
-2. setup "./source/config.json" file.
+2. Setup "./source/config.json" file.
+```
+{
+  "data_path": "../data",           // Path to the directory where the data is stored
+  "weights_path": "../weights",     // Path to the directory where model weights will be saved
+  "prediction_path": "../prediction", // Path to the directory where prediction results will be saved
+  
+  "model_types": ["binary", "continuous"], // Types of models to use
+  "tissue": "EB",                   // Type of tissue being analyzed, in this case, 'EB' (Embryoid Body)
+  "histones": ["H3K4me1", "H3K4me3"], // List of histone modifications to be considered in the analysis
+  
+  "batch_size": 512,                // Number of samples per batch during training
+  "lr": 1e-3,                       // Learning rate for training the model
+  "num_epochs": 5,                  // Number of training epochs
+  "earlystop_thresh": 10            // Number of epochs to wait for improvement before early stopping is triggered
+}
+```
 ### In terminal
 - Activate your conda environment 'Deep5hmC' in the terminal.
 ```bash
