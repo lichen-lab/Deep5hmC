@@ -58,4 +58,4 @@ python Deep5hmC_cont.py config.json
 We created a demo ([demo.ipynb](https://github.com/XinBiostats/Deep5hmC/blob/main/source/demo.ipynb)) to demonstrate how to use __Deep5hmC__. The results will be displayed inline or saved by users.
 
 # Citation
-([__Ma X__, Thela SR, Zhao F, Yao B, Wen Z, Jin P, Zhao J, Chen L. Deep5hmC: Predicting genome-wide 5-Hydroxymethylcytosine landscape via a multimodal deep learning model. bioRxiv [Preprint]. 2024 Mar 6:2024.03.04.583444. doi: 10.1101/2024.03.04.583444. PMID: 38496575; PMCID: PMC10942288.](https://www.biorxiv.org/content/10.1101/2024.03.04.583444v1))
+[__Ma X__, Thela SR, Zhao F, Yao B, Wen Z, Jin P, Zhao J, Chen L. Deep5hmC: Predicting genome-wide 5-Hydroxymethylcytosine landscape via a multimodal deep learning model. bioRxiv [Preprint]. 2024 Mar 6:2024.03.04.583444. doi: 10.1101/2024.03.04.583444. PMID: 38496575; PMCID: PMC10942288.[link](https://www.biorxiv.org/content/10.1101/2024.03.04.583444v1)
