@@ -16,7 +16,7 @@ data_path = config['data_path']
 weights_path = config['weights_path']
 prediction_path = config['prediction_path']
 
-model_type = config['model_type']
+model_types = config['model_types']
 tissue = config['tissue']
 histones = config['histones']
 
@@ -25,19 +25,19 @@ num_epochs = config['num_epochs']
 lr = config['lr']
 earlystop_thresh = config['earlystop_thresh']
 
-
 # load data for predicting binary 5hmC peaks
-data_binary = MyDataset(f'{data_path}/{tissue}', batch_size, histones)
+data = MyDataset(data_path,tissue,histones, batch_size)
 
-    # load Deep5hmC_binary
-    model_binary = Deep5hmC_binary(input_read_size=data_binary.read_size)
+# load Deep5hmC_binary
+model = Deep5hmC_binary(input_read_size=data.read_size)
 
-    # train Deep5hmC_binary
-    trainer = Trainer(num_epochs=num_epochs, lr=lr, earlystop_thresh=earlystop_thresh)
+# train Deep5hmC_binary
+trainer = Trainer(weights_path = weights_path, tissue = tissue, num_epochs=num_epochs, lr=lr, earlystop_thresh=earlystop_thresh)
 
-    trainer.fit_binary(model_binary,data_binary)
+trainer.fit(model = model, data = data, model_type = model_types[0])
 
-    # evaluate Deep5hmC_binary
-    evaluator = Evaluator(model_binary, best_model = '../parameters/Deep5hmC_binary.pth')
+# evaluate Deep5hmC_binary
+evaluator = Evaluator(prediction_path = prediction_path, tissue = tissue, model=model, best_model = trainer.best_model)
+# evaluator = Evaluator(prediction_path = prediction_path, tissue = tissue, model=model, best_model = f'../pretrained/Deep5hmC_binary.pth') # evaluate pretrained model
 
-    evaluator.eval_model_binary(data_binary,verbose=1)
+evaluator.eval_model(data, model_type = model_types[0], verbose=1)
