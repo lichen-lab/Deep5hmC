@@ -22,7 +22,7 @@ We use “Forebrain Organoid” data at the EB stage as our example dataset. Fol
 
 1. Download preprocessed data from [Dropbox](https://www.dropbox.com/scl/fo/zbht290yp67yfd1bcvofy/AGG8rFnKJxGTbmrv6uR_RSA?rlkey=3va94r26om8muivxho72wpzpp&dl=0) to './Deep5hmC/data'.
 2. Setup "./source/config.json" file.
-```json
+```
 {
   "data_path": "../data",           // Path to the directory where the data is stored
   "weights_path": "../weights",     // Path to the directory where model weights will be saved
