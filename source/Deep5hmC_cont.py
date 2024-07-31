@@ -2,6 +2,9 @@ from dataloader import *
 from models import *
 from trainer import *
 from evaluator import *
+import json
+import argparse
+
 
 # load data for predicting continuous 5hmC read counts
 data_cont = MyDataset_cont(64*8,['H3K4me1','H3K4me3'])
