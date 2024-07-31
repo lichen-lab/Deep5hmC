@@ -43,13 +43,15 @@ conda activate Deep5hmC
 ```
 4. Create .h5 data.
 ```bash
-python ./source/create_h5.py ./source/config.json
+cd ./source
+
+python create_h5.py config.json
 ```
 5. Run Deep5hmC-binary or Deep5hmC-cont model.
 ```bash
-python ./source/Deep5hmC_binary.py ./source/config.json
+python Deep5hmC_binary.py config.json
 
-python ./source/Deep5hmC_cont.py ./source/config.json
+python Deep5hmC_cont.py config.json
 ```
 
 ### In Jupyter
