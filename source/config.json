@@ -9,6 +9,6 @@
     
     "batch_size": 512,
     "lr": 1e-3,
-    "num_epochs": 5,
+    "num_epochs": 50,
     "earlystop_thresh": 10
 }
