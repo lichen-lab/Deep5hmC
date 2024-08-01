@@ -40,11 +40,11 @@ We use “Forebrain Organoid” data at the EB stage as our example dataset. Fol
 }
 ```
 ### In terminal
-3. Activate your conda environment 'Deep5hmC' in the terminal.
+4. Activate your conda environment 'Deep5hmC' in the terminal.
 ```bash
 conda activate Deep5hmC
 ```
-4. Create .h5 data.
+5. Create .h5 data.
 ```bash
 cd ./source
 
@@ -56,7 +56,7 @@ python create_h5.py config_gene.json
 
 python create_h5.py config_diff.json
 ```
-5. Run Deep5hmC models.
+6. Run Deep5hmC models.
 ```bash
 cd ./source
 
