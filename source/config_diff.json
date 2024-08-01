@@ -1,0 +1,14 @@
+{
+    "data_path": "../data",
+    "weights_path": "../weights",
+    "prediction_path": "../prediction",
+    
+    "model_type": "diff",
+    "tissue": "EB",
+    "histones": ["H3K4me3", "H3K27ac"],
+    
+    "batch_size": 256,
+    "lr": 1e-3,
+    "num_epochs": 5,
+    "earlystop_thresh": 10
+}
