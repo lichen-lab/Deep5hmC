@@ -28,7 +28,7 @@ We use “Forebrain Organoid” data at the EB stage as our example dataset. Fol
   "weights_path": "../weights",     // Path to the directory where model weights will be saved
   "prediction_path": "../prediction", // Path to the directory where prediction results will be saved
   
-  "model_types": ["binary", "continuous"], // Types of models to use
+  "model_types": "binary", // Types of models to use: "binary","cont","gene","diff"
   "tissue": "EB",                   // Type of tissue being analyzed, in this case, 'EB' (Embryoid Body)
   "histones": ["H3K4me1", "H3K4me3"], // List of histone modifications to be considered in the analysis
   
@@ -47,13 +47,23 @@ conda activate Deep5hmC
 ```bash
 cd ./source
 
-python create_h5.py config.json
-```
-5. Run Deep5hmC-binary or Deep5hmC-cont model.
-```bash
-python Deep5hmC_binary.py config.json
+python create_h5.py config_binary.json
 
-python Deep5hmC_cont.py config.json
+python create_h5.py config_cont.json
+
+python create_h5.py config_gene.json
+
+python create_h5.py config_diff.json
+```
+5. Run Deep5hmC models.
+```bash
+python Deep5hmC_binary.py config_binary.json
+
+python Deep5hmC_cont.py config_cont.json
+
+python Deep5hmC_gene.py config_gene.json
+
+python Deep5hmC_diff.py config_diff.json
 ```
 
 ### In Jupyter
