@@ -20,6 +20,7 @@ conda env create -f environment.yml
 ## Usage
 We use “Forebrain Organoid” data at the EB stage as our example dataset. Follow the steps below to run the two main models: Deep5hmC-binary and Deep5hmC-cont, in both terminal and jupyter.
 
+### Preparation
 1. Download preprocessed data from [Dropbox](https://www.dropbox.com/scl/fo/zbht290yp67yfd1bcvofy/AGG8rFnKJxGTbmrv6uR_RSA?rlkey=3va94r26om8muivxho72wpzpp&dl=1) to './Deep5hmC/data'.
 2. Download pretrained models from [Dropbox](https://www.dropbox.com/scl/fo/b8hyeamnojacp04o6hgs1/ACfiArxwvTk-guFqdpshKDA?rlkey=55mtuusluf7o4qpvfrm5p3q5d&dl=1) to "./Deeph5mC/pretrained".
 3. Setup "./source/config.json" file.
