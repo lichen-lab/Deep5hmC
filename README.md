@@ -57,6 +57,8 @@ python create_h5.py config_diff.json
 ```
 5. Run Deep5hmC models.
 ```bash
+cd ./source
+
 python Deep5hmC_binary.py config_binary.json
 
 python Deep5hmC_cont.py config_cont.json
